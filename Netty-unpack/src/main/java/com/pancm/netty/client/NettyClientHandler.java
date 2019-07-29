@@ -56,7 +56,7 @@ public class NettyClientHandler extends ChannelInboundHandlerAdapter{
 //            message = Unpooled.buffer(req.length);  
 //            message.writeBytes(req);  
 //            ctx.writeAndFlush(message);  
-//        }  
+//        }
         message = Unpooled.buffer(req.length);  
         message.writeBytes(req);  
         ctx.writeAndFlush(message);
